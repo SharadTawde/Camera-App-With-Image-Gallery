@@ -43,7 +43,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
             mCamera.setPreviewDisplay(surfaceHolder);
             mCamera.getParameters().setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
             mCamera.setDisplayOrientation(90);
-            mCamera.getParameters().set("flash-mode", "on");
             mCamera.startPreview();
         } catch (IOException e) {
             e.printStackTrace();
@@ -74,7 +73,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
             List<Camera.Area> focusList = new ArrayList<Camera.Area>();
             Camera.Area focusArea = new Camera.Area(tfocusRect, 1000);
             focusList.add(focusArea);
-            mCamera.getParameters().set("flash-mode", "on");
             Camera.Parameters param = mCamera.getParameters();
             param.setFocusAreas(focusList);
             param.setMeteringAreas(focusList);

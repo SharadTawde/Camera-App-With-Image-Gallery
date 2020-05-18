@@ -18,10 +18,11 @@ public class GalleryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
         recyclerView = findViewById(R.id.recyclerView);
+        Permission.checkAndRequestPermissions(this);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 4));
-        RecyclerViewMediaAdapter recyclerViewMediaAdapter = new RecyclerViewMediaAdapter(this.getListFiles
+        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(this.getListFiles
                 (new File(Environment.getExternalStorageDirectory().toString() + "/Camera App")), this);
-        recyclerView.setAdapter(recyclerViewMediaAdapter);
+        recyclerView.setAdapter(recyclerViewAdapter);
     }
 
     private ArrayList<File> getListFiles(File parentDir) {

@@ -8,7 +8,6 @@ import android.os.Environment;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
-    private ImageView flashBtn;
     private CameraPreview cameraPreview;
     private int currentCameraId;
 
@@ -46,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         frameLayout = findViewById(R.id.frame_layout);
-        flashBtn = findViewById(R.id.flash);
+        Permission.checkAndRequestPermissions(this);
     }
 
     @Override
@@ -102,10 +100,6 @@ public class MainActivity extends AppCompatActivity {
         if (mCamera != null) {
             mCamera.takePicture(null, null, mPictureCallback);
         }
-    }
-
-    public void isFlashOn(View view) {
-
     }
 
     public void openGallery(View view) {

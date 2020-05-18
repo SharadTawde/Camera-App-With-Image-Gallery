@@ -15,25 +15,25 @@ import com.bumptech.glide.Glide;
 import java.io.File;
 import java.util.ArrayList;
 
-public class RecyclerViewMediaAdapter extends RecyclerView.Adapter<RecyclerViewMediaAdapter.FileHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.FileHolder> {
     private ArrayList<File> filesList;
     private Activity activity;
 
-    public RecyclerViewMediaAdapter(ArrayList<File> filesList, Activity activity) {
+    public RecyclerViewAdapter(ArrayList<File> filesList, Activity activity) {
         this.filesList = filesList;
         this.activity = activity;
         setHasStableIds(true);
     }
 
     @Override
-    public RecyclerViewMediaAdapter.FileHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerViewAdapter.FileHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View inflatedView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.gallery_image_card, parent, false);
         return new FileHolder(inflatedView);
     }
 
     @Override
-    public void onBindViewHolder(final RecyclerViewMediaAdapter.FileHolder holder, int position) {
+    public void onBindViewHolder(final RecyclerViewAdapter.FileHolder holder, int position) {
         File currentFile = filesList.get(position);
         Glide.with(activity).load(currentFile).placeholder(R.drawable.plceholder).into(holder.imageViewImageMedia);
     }

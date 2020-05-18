@@ -9,6 +9,29 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:transitionName="profileTransition"/>
+        android:transitionName="profileTransition" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/drive_text"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="uploadToDrive"
+        android:padding="10dp"
+        android:src="@drawable/ic_drive" />
+
+    <TextView
+        android:id="@+id/drive_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Upload to drive"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
