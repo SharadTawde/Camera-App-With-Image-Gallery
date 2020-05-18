@@ -20,10 +20,10 @@ https://github.com/SharadTawde/Camera-App-With-Image-Gallery/raw/master/app-debu
     <th>Google drive option</th>
   </tr>
   <tr>
-    <th><img src="/screen_1.jpg"/></th>
-    <th><img src="/screen_2.jpg"/></th>
-    <th><img src="/screen_3.jpg"/></th>
-    <th><img src="/screen_4.jpg"/></th>
+    <th><img src="/screen_1-min.jpg"/></th>
+    <th><img src="/screen_2-min.jpg"/></th>
+    <th><img src="/screen_3-min.jpg"/></th>
+    <th><img src="/screen_4-min.jpg"/></th>
   </tr>
 </table>
 
@@ -34,3 +34,8 @@ https://github.com/SharadTawde/Camera-App-With-Image-Gallery/raw/master/app-debu
 - Gallery view for captured images.
 - View full screen image.
 - Upload to google drive
+
+## Built With 🛠
+- [Java](https://www.oracle.com/java/technologies/) - A native language for android development.
+- [Glide](https://github.com/bumptech/glide) - An image loading and caching library for Android focused on smooth scrolling.
+- [Google Drive API](https://developers.google.com/drive/android) - Read, write, and sync files stored in Google Drive from Android app.
