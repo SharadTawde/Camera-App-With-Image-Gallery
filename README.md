@@ -26,3 +26,11 @@ https://github.com/SharadTawde/Camera-App-With-Image-Gallery/raw/master/app-debu
     <th><img src="/screen_4.jpg"/></th>
   </tr>
 </table>
+
+## Features
+- Capture image with high resolution. 
+- On touch focus mode.
+- Rotate camera.
+- Gallery view for captured images.
+- View full screen image.
+- Upload to google drive
