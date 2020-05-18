@@ -1,4 +1,4 @@
-package com.sharad.camera;
+package com.sharad.camera.Utils;
 
 import android.content.Context;
 import android.graphics.Rect;

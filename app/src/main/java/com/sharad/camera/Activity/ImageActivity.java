@@ -1,4 +1,4 @@
-package com.sharad.camera;
+package com.sharad.camera.Activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -24,6 +24,8 @@ import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccoun
 import com.google.api.client.json.gson.GsonFactory;
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.DriveScopes;
+import com.sharad.camera.Utils.DriveServiceHelper;
+import com.sharad.camera.R;
 
 import java.io.File;
 import java.util.Collections;

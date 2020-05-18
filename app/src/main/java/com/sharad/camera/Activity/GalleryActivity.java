@@ -1,4 +1,4 @@
-package com.sharad.camera;
+package com.sharad.camera.Activity;
 
 import android.os.Bundle;
 import android.os.Environment;
@@ -6,6 +6,10 @@ import android.os.Environment;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.sharad.camera.Utils.Permission;
+import com.sharad.camera.R;
+import com.sharad.camera.Adapter.RecyclerViewAdapter;
 
 import java.io.File;
 import java.util.ArrayList;

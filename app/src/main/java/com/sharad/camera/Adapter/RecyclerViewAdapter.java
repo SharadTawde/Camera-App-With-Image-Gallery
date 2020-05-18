@@ -1,4 +1,4 @@
-package com.sharad.camera;
+package com.sharad.camera.Adapter;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.sharad.camera.Activity.ImageActivity;
+import com.sharad.camera.R;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -28,7 +30,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public RecyclerViewAdapter.FileHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View inflatedView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.gallery_image_card, parent, false);
+                .inflate(R.layout.adapter_layout, parent, false);
         return new FileHolder(inflatedView);
     }
 

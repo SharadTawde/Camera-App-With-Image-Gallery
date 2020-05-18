@@ -1,4 +1,4 @@
-package com.sharad.camera;
+package com.sharad.camera.Activity;
 
 import android.content.Intent;
 import android.hardware.Camera;
@@ -10,6 +10,10 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.sharad.camera.Utils.CameraPreview;
+import com.sharad.camera.Utils.Permission;
+import com.sharad.camera.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
