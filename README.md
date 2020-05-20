@@ -4,7 +4,7 @@
 
 
 # Simple Camera App with Image Gallery
-**Simple Camera App** is a sample Android application 📱 built to demonstrate use of Camera1 & Google Drive Api. It help Android developers easily integrate Camera features.
+**Camera App** is a sample Android application 📱 built to demonstrate use of Camera1 & Google Drive Api. It help Android developers easily integrate Camera features.
 
 ***You can Install and test latest Camera app from below 👇***.
 
