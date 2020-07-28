@@ -6,14 +6,13 @@ import android.media.MediaActionSound;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.sharad.camera.R;
 import com.sharad.camera.Utils.CameraPreview;
 import com.sharad.camera.Utils.Permission;
-import com.sharad.camera.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -45,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         frameLayout = findViewById(R.id.frame_layout);
         Permission.checkAndRequestPermissions(this);
